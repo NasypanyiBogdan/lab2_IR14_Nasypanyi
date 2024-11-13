@@ -1,11 +1,11 @@
 import math
 
 def first_function(x):
-    return ( x^2 - 1)**(x - 1)
+    return ( x**2 - 1)**(x - 1)
 def second_function(x):
     return 1 / (math.sin(x) + abs(math.cos(x)))
-def third_functin(x):
-    return math.log(math.exp**x + 4)
+def third_function(x):
+    return math.log(math.exp(x) + 4)
 
 a = 7.5
 b = 10
@@ -19,7 +19,7 @@ while x <= b :
     elif 8 < x <= 9 :
         result.append((x, second_function(x)))
     elif x > 9 :
-        result.append((x, third_functin(x)))
+        result.append((x, third_function(x)))
 
     x += h
     x = round(x, 3)
